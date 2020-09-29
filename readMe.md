@@ -1,18 +1,18 @@
+# Project Description
 
-#GitHub :https://github.com/shraddhargupta/relayr.git
-#git commands :
-     git clone https://github.com/shraddhargupta/relayr.git
+This is GUI Automation Framework designed using selenium web driver , python unit test , python pandas and HtmlTestRunner to verify google search functionality.
 
-# pip installation :
+## Software Requirement
 
- pandas:pip3 install pandas --no-build-isolation
- html-testRunner:pip install html-testRunner
- selenium:pip install selenium
- requests :pip install requests
+|  Name        |  Version      |
+|--------------|---------------|
+|Python        | 3.8.5         |
+|Chrome        | 85.0.4183.121 |
 
+Please install chrome driver if given driver is not compatible from [driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+Please store the driver under "drivers" directory
 
-#This Project requires below python libraries
-python version :Python 3.8.5
+## Python Libraries
 
 | library Name  |  Version |
 |---------------|----------|
@@ -21,29 +21,59 @@ python version :Python 3.8.5
 | selenium      | 3.141.0  |
 |html-testRunner| 3.141.0  |
 
+## Pip installation :
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install python libraries.
+
+Pandas
+
+```bash
+pip3 install pandas --no-build-isolation
+```
+Selenium
+```bash
+pip install selenium
+```
+requests
+
+```bash
+pip install requests
+```
+html-testRunner
+
+```bash
+pip install html-testRunner
+```
 
 
-chromedriver.exe
+## Starting Execution
 
-#Starting execution :
- run driver_script.py as python file .
+1.Clone git repository
 
-#Basic Framework structure :
+```bash
+git clone https://github.com/shraddhargupta/relayr.git
+```
+2.Open command prompt and go to project location
 
- This framework is designed using Selenium webdriver , python unittest , python pandas
- and HtmlTestRunner for reporting.
+3.Execute below command
+```bash
+python test/driver_script.py
+```
+4.After Execution Results will be stored under reports directory.
 
-1. folder name: test  file name : driver_script.py
-2. reports:This folder will store all html results generated .
-3. testdata: This folder contains file Driver.csv .This serve as input for all testcases.
-4.drivers: This folder contains webdriver for browsers
-5.config_details : config.py file stores all configuration related data
-6.screenshots : This folder will store screenshots if any
+## Folder Structure
 
+1.**test** : This folder contains file "driver_script.py" which will start execution
+2. **reports**:This folder will store all html results generated .
+3. **testdata**: This folder contains test data file "Driver.csv".
+4. **drivers**: This folder contains web driver for browsers .
+5.**config details**: config file stores all configuration related.
+6. **screenshots** : This folder will store screenshots if any
 
-#I would like to propose below improvements
-
-1.Reporting : As a temporary solution I have tried to customise report in code itself.
-              More advance reporting can be implemented by providing customize HTML report or by using advanced reporting mechanism.
-2.Exception Handling:Currently project has very limited exception handling in place.
-3.Objects/Web elements related to a single page can be stored in separate file and not hardcoded in main script.
+## Future Enhancements
+1.Webobject / elements will be stored in separate file.
+2.Cross Browser Testing: Config based browser will be incorporated.
+3.Reporting : More advance reporting can be implemented by providing customize HTML results.
+4.Exception Handling:Currently project has very limited exception handling in place.
+5.Headless Browser :This can be used For faster and unmonitored execution
+```

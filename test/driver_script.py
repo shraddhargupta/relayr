@@ -3,10 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import requests
 import HtmlTestRunner
-from config_details import config
-from read_testdata import get_execution_details
 from unittest import SkipTest
 from selenium.common.exceptions import NoSuchElementException
+# from config_details import config
+from read_testdata import get_execution_details
+from config_details import config
 
 
 # This is the starting point of framework.
@@ -105,7 +106,8 @@ class TestGoogleSearch(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    path=config.html_report
     unittest.main(
         testRunner=HtmlTestRunner.HTMLTestRunner(verbosity=3, report_title='Google Search : GUI Automation Report',
-                                                 output='../reports',
+                                                 output=path,
                                                  descriptions='This Report provides summary of all executed testcases.'))
