@@ -63,17 +63,16 @@ python test/driver_script.py
 
 ## Folder Structure
 
-1.**test** : This folder contains file "driver_script.py" which will start execution
+1. **test** : This folder contains file "driver_script.py" which will start execution.
 2. **reports**:This folder will store all html results generated .
 3. **testdata**: This folder contains test data file "Driver.csv".
 4. **drivers**: This folder contains web driver for browsers .
-5.**config details**: config file stores all configuration related.
+5. **config details**: config file stores all configuration related.
 6. **screenshots** : This folder will store screenshots if any
 
 ## Future Enhancements
-1.Webobject / elements will be stored in separate file.
-2.Cross Browser Testing: Config based browser will be incorporated.
-3.Reporting : More advance reporting can be implemented by providing customize HTML results.
-4.Exception Handling:Currently project has very limited exception handling in place.
-5.Headless Browser :This can be used For faster and unmonitored execution
-```
+1. Webobject / elements will be stored in separate file.
+2. Cross Browser Testing: Config based browser will be incorporated.
+3. Reporting : More advance reporting can be implemented by providing customize HTML results.
+4. Exception Handling:Currently project has very limited exception handling in place.
+5. Headless Browser :This can be used For faster and unmonitored execution
