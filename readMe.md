@@ -61,8 +61,6 @@ python test/driver_script.py
 ```
 4.After Execution Results will be stored under reports directory.
 
-![HTML Report](https://raw.github.com/shraddhargupta/relayr/master/screenshots/htmlReport.jpg?raw=true "HTML Report")
-
 ## Folder Structure
     
 1. **test** : This folder contains file "driver_script.py" which will start execution.
